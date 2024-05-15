@@ -1,1 +1,43 @@
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
+@use 'partials/header';
+@use 'partials/hero';
+@use 'partials/home';
+@use 'partials/comics';
+@use 'partials/comic';
+@use 'partials/footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.triangle {
+    font-size: .5rem;
+    vertical-align: middle;
+}
+
+.container {
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.container-sm {
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+}
