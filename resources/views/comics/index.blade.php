@@ -27,7 +27,7 @@
                     <p>Sorry, no comics to show...</p>
                 @endforelse
             </div>
-            {{-- {{ $comics->links('pagination::bootstrap-5') }} --}}
+            {{ $comics->links('pagination::bootstrap-5') }}
         </div>
     </section>
 @endsection

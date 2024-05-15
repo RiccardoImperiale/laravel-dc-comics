@@ -1,5 +1,5 @@
 <footer>
-    <div class="top_banner">
+    <div class="top_banner h-100">
         <img src="{{ Vite::asset('resources/images/dc-logo-bg.png') }}" alt="">
         <div class="container">
             <div class="text">

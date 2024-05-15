@@ -1,5 +1,5 @@
-// @import '~bootstrap/scss/pagination';
-// @import '~bootstrap/scss/bootstrap';
+@use '~bootstrap/scss/bootstrap';
+
 @use 'partials/header';
 @use 'partials/hero';
 @use 'partials/home';
@@ -24,6 +24,14 @@ a {
 
 ul {
     list-style: none;
+    padding-left: 0;
+}
+
+ol,
+ul,
+dl {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .triangle {
