@@ -1,0 +1,82 @@
+@use '../variables' as *;
+
+nav {
+    .top {
+        font-size: .75rem;
+        background-color: $dc-primary;
+        padding: 5px 0;
+
+        ul {
+            display: flex;
+            gap: 5rem;
+            justify-content: flex-end;
+            color: $dc-lighter;
+        }
+
+        .triangle {
+            font-size: .45rem;
+        }
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+
+        ul {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1rem;
+            height: 100%;
+            align-items: end;
+
+            li {
+                height: 60%;
+
+                .triangle {
+                    color: $dc-primary;
+                    position: relative;
+                    bottom: 2px;
+                }
+
+                &:hover {
+                    border-bottom: 5px solid $dc-primary;
+                }
+
+            }
+
+            a {
+                color: $dc-dark;
+                font-weight: 400;
+
+            }
+
+            a.disabled {
+                color: rgb(182, 182, 182);
+                cursor: default;
+            }
+        }
+    }
+
+    .input {
+        padding: .5rem 0;
+        border-bottom: 1px solid $dc-primary;
+        display: flex;
+        align-items: center;
+
+        input {
+            border: none;
+            text-align: end;
+            padding-right: 1rem;
+
+            &::placeholder {
+                color: $dc-dark;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

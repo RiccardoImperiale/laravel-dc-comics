@@ -1,0 +1,108 @@
+@use '../variables' as *;
+
+#comics {
+    background-color: $dc-lighter;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    position: relative;
+
+    .container {
+
+        .title_box {
+            background-color: $dc-primary;
+            position: absolute;
+            top: 0;
+            padding: .65rem 2rem;
+            color: $dc-lighter;
+            font-size: 1.5rem;
+            font-weight: 500;
+            transform: translateY(-50%);
+        }
+
+        .comics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 3.5rem;
+            justify-content: center;
+
+            .comic {
+                display: flex;
+                gap: 1rem;
+
+                .comic_image {
+                    overflow: hidden;
+                    width: 20%;
+                    background-color: aqua;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+
+                .comic_text {
+                    width: 80%;
+                    padding: 1rem 2rem;
+                    background-color: rgb(228, 228, 228);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .comic_title {
+                        color: $dc-dark;
+                        width: 100%;
+                        padding-top: 1rem;
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        color: $dc-dark;
+                    }
+
+                    .bottom_text {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: end;
+                        color: $dc-dark;
+                    }
+                }
+            }
+        }
+
+        .btn {
+            background-color: $dc-primary;
+            padding: .5rem 0;
+            width: 200px;
+            margin: 0 auto;
+            text-align: center;
+            color: $dc-lighter;
+
+        }
+    }
+}
+
+.banner {
+    background-color: $dc-primary;
+    width: 100%;
+    padding: 2rem 0;
+
+    .container {
+
+        display: flex;
+        justify-content: space-between;
+
+        .link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .text {
+                font-size: .85rem;
+                color: $dc-lighter;
+            }
+        }
+    }
+}
