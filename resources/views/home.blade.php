@@ -2,6 +2,6 @@
 
 @section('content')
     <main>
-        main
+        <img src="{{ Vite::asset('resources/images/adv.jpg') }}">
     </main>
 @endsection
