@@ -4,9 +4,6 @@
     <section id="comics">
         <div class="container">
             <div class="title_box">ALL COMICS</div>
-            <div class="d-flex w-100">
-                <a class="btn btn-primary mb-5" href="{{ route('comics.create') }}">Add New Comic</a>
-            </div>
             <div class="comics">
                 @forelse ($comics as $comic)
                     <a class="w-100" href="{{ route('comics.show', $comic) }}">

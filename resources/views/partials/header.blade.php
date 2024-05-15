@@ -15,8 +15,9 @@
                     {{-- <li><a class="disabled" href="#">CHARACTERS</a></li> --}}
                     <li><a class="{{ Route::currentRouteName() === 'home' || Route::currentRouteName() === 'comics.index' ? '' : 'disabled' }}"
                             href="{{ route('comics.index') }}">ALL COMICS</a></li>
-                    <li><a class="{{ Route::currentRouteName() !== 'create' ? 'disabled' : '' }}" href="#">ADD
-                            COMIC</a></li>
+                    <li> <a class="btn btn-primary btn_new text-white" href="{{ route('comics.create') }}">Add New
+                            Comic</a>
+                    </li>
                     {{-- <li><a class="disabled" href="#">TV</a></li>
                     <li><a class="disabled" href="#">GAMES</a></li>
                     <li><a class="disabled" href="#">COLLECTIBLES</a></li>
