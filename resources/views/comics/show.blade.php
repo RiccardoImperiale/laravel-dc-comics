@@ -15,8 +15,8 @@
                     <div class="title">{{ $comic['title'] }}</div>
                     <div class="green_band">
                         <div class="left">
-                            <p>U.S. Price: <span>{{ $comic['price'] }}</span> </p>
-                            <p><span>AVAILABLE</span></p>
+                            <p class="my-1">U.S. Price: <span>{{ $comic['price'] }}</span> </p>
+                            <p class="my-1"><span>AVAILABLE</span></p>
                         </div>
                         <div class="right">
                             <a href="#">Check Availability</a>
@@ -36,8 +36,10 @@
                 </div>
             </div>
         </div>
-        <div class="bottom">
-            <div class="container-sm">
+        <div class="bottom pb-5">
+            <div class="container-sm gx-0">
+                <a href="{{ route('comics.edit', $comic) }}" class="btn btn-secondary">Edit Comic</a>
+                <button class="btn btn-danger ms-1">Delete Comic</button>
             </div>
         </div>
     </section>
