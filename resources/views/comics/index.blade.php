@@ -9,7 +9,8 @@
                     <a class="w-100" href="{{ route('comics.show', $comic) }}">
                         <div class="comic">
                             <div class="comic_image">
-                                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                                <img src="{{ $comic['thumb'] ?? Vite::asset('resources/images/default.jpg') }}"
+                                    alt="{{ $comic['title'] }}">
                             </div>
                             <div class="comic_text">
                                 <div>

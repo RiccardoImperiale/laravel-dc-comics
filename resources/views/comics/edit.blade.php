@@ -25,13 +25,21 @@
                     <div class="text-danger">{{ $message }}</div>
                 @enderror
             </div>
-            <div class="mb-3">
-                <label for="thumb" class="form-label">Thumb</label>
-                <input type="text" name="thumb" class="form-control @error('thumb') is-invalid @enderror"
-                    placeholder="https://" id="thumb" value="{{ old('thumb', $comic->thumb) }}">
-                @error('thumb')
-                    <div class="text-danger">{{ $message }}</div>
-                @enderror
+            <div class="mb-3 d-flex align-items-end">
+                <div class="w-100 me-3">
+                    <label for="thumb" class="form-label">Thumb</label>
+                    <input type="text" name="thumb" class="form-control @error('thumb') is-invalid @enderror"
+                        placeholder="https://" id="thumb" value="{{ old('thumb', $comic->thumb) }}">
+                    @error('thumb')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div class="mt-3">
+                    <img width="80" height="80" class="rounded-circle border border-1 border-secondary"
+                        id="imagePreview"
+                        src="{{ $comic->thumb ? old('thumb', $comic->thumb) : Vite::asset('resources/images/default.jpg') }}"
+                        alt="comic image">
+                </div>
             </div>
             <div class="mb-3">
                 <label for="price" class="form-label">Price</label>

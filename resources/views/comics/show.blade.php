@@ -5,7 +5,8 @@
         <div class="band">
             <div class="container-sm">
                 <div class="poster">
-                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                    <img src="{{ $comic['thumb'] ?? Vite::asset('resources/images/default.jpg') }}"
+                        alt="{{ $comic['title'] }}">
                 </div>
             </div>
         </div>
