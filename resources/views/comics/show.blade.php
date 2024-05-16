@@ -37,9 +37,13 @@
             </div>
         </div>
         <div class="bottom pb-5">
-            <div class="container-sm gx-0">
+            <div class="container-sm gx-0 d-flex">
                 <a href="{{ route('comics.edit', $comic) }}" class="btn btn-secondary">Edit Comic</a>
-                <button class="btn btn-danger ms-1">Delete Comic</button>
+                <form action="{{ route('comics.destroy', $comic) }}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger ms-1">Delete Comic</button>
+                </form>
             </div>
         </div>
     </section>
